@@ -9,8 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
-    - uses: stefanzweifel/git-auto-commit-action@v4
     - name: Update generated.md
       run: |
         date +%s > generated.md
+    - uses: stefanzweifel/git-auto-commit-action@v4
